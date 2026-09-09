@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
-  <rect width="800" height="600" fill="#dfe6ea"/>
-  <path d="M0 380 L180 250 L330 360 L470 230 L620 340 L800 240 L800 600 L0 600 Z" fill="#b9c7cf"/>
-  <path d="M0 470 L200 400 L400 465 L600 395 L800 460 L800 600 L0 600 Z" fill="#8fa3ae"/>
-  <circle cx="655" cy="120" r="42" fill="#ffffff" opacity=".55"/>
-  <text x="400" y="560" font-family="system-ui,sans-serif" font-size="22" fill="#ffffff" opacity=".75" text-anchor="middle">field photo 01</text>
-</svg>
