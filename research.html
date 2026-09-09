@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research — Daniel Angulo Serrano</title>
+<meta name="description" content="Research projects, methods and publications — fungal metabarcoding in alpine tundra and Andean elevational gradients.">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="images/site/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">Daniel Angulo Serrano
+      <span class="brand-sub">Molecular &amp; fungal ecology</span>
+    </a>
+    <nav class="site-nav">
+      <a href="index.html">About</a>
+      <a href="research.html" aria-current="page">Research</a>
+      <a href="field.html">Field</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <div class="wrap">
+      <p class="kicker">Research</p>
+      <h1>Projects</h1>
+      <p class="lede">Each project below pairs a field question with a
+        sequencing dataset and an open analysis pipeline.</p>
+    </div>
+  </section>
+
+  <section class="section wrap narrow">
+
+    <!-- ============ PROJECT: PTARMIGAN ============ -->
+    <article class="project" id="ptarmigan">
+      <div class="project-head">
+        <h3>Seasonal turnover in the dung fungal community of willow ptarmigan</h3>
+        <span class="years">2022–present</span>
+      </div>
+      <p class="meta"><span class="status">In progress</span></p>
+      <p>
+        Willow ptarmigan (<em>Lagopus lagopus</em>) switch diet sharply between
+        a winter of woody browse and a summer of green forage. This project
+        asks whether that dietary shift is written into the fungal community
+        of their droppings. I sampled dung at Lifjellet, Lierne (Norway) in
+        March and June across three years, sequenced fungal ITS2 alongside
+        plant ITS2 from the same samples, and tested for seasonal compositional
+        turnover, diversity change, and covariation between individual fungal
+        taxa and the plants in the diet.
+      </p>
+      <p>
+        The analysis chain runs from demultiplexing and primer trimming through
+        DADA2 denoising and LULU curation to UNITE-based taxonomy, then into
+        community-level models: robust-Aitchison PERMANOVA, Hill-number
+        diversity, generalised linear latent variable models and a joint
+        species distribution model. A separate strand documents "dark" fungal
+        taxa — sequences with no confident named match — against UNITE Species
+        Hypotheses.
+      </p>
+      <ul class="tags">
+        <li>ITS2 metabarcoding</li><li>DADA2</li><li>Diet reconstruction</li>
+        <li>GLLVM / HMSC</li><li>Bayesian modelling</li><li>Norway</li>
+      </ul>
+      <div class="btn-row">
+        <a class="btn" href="https://github.com/Ssangulo/Ptarmigan_fungi">Analysis code on GitHub</a>
+      </div>
+    </article>
+
+    <!-- ============ PROJECT: ROOT FUNGI ============ -->
+    <article class="project" id="roots">
+      <div class="project-head">
+        <h3>Root-associated fungi of <em>Pernettya</em> across an Andean elevational gradient</h3>
+        <span class="years">2019–2024</span>
+      </div>
+      <p>
+        Root fungal communities sampled across four sites and a 2700–3800 m
+        elevational gradient spanning montane forest, subpáramo and páramo.
+        The design nests PCR replicates within root samples within plant
+        individuals within locations, which made it a good testbed for how much
+        of an apparent community pattern survives technical replication.
+      </p>
+      <p>
+        The metabarcoding pipeline developed here — demultiplexing through
+        DADA2, LULU curation, contaminant removal using negative and extraction
+        blank controls, and reference-based removal of non-fungal reads — is
+        the ancestor of everything I have run since.
+      </p>
+      <ul class="tags">
+        <li>ITS metabarcoding</li><li>Elevational gradient</li><li>Root endophytes</li>
+        <li>Technical replication</li><li>Colombia</li>
+      </ul>
+      <div class="btn-row">
+        <a class="btn" href="https://github.com/Ssangulo/Root_fungi_DADA2">Pipeline on GitHub</a>
+      </div>
+    </article>
+
+    <!-- ============ ADD A PROJECT ============
+         Copy one <article class="project"> block above, change the id,
+         title, years, text and tags. That is all it takes.
+    ============================================ -->
+
+    <!-- ============ PUBLICATIONS ============ -->
+    <h2>Publications</h2>
+    <p>
+      <!-- EDIT: replace these entries with your real publication list. -->
+      Replace the entries below with your own — one <code>&lt;li&gt;</code> per paper.
+    </p>
+    <ul class="pubs">
+      <li>
+        <span class="authors">Angulo Serrano, D., &amp; co-authors.</span>
+        <span class="title">Title of the paper goes here.</span>
+        <span class="venue">Journal name, year.</span>
+        <a href="#">DOI</a>
+      </li>
+      <li>
+        <span class="authors">Angulo Serrano, D., &amp; co-authors.</span>
+        <span class="title">Another paper title.</span>
+        <span class="venue">Journal name, year.</span>
+        <a href="#">DOI</a>
+      </li>
+    </ul>
+
+    <!-- ============ METHODS / SOFTWARE ============ -->
+    <h2>Code &amp; reproducibility</h2>
+    <p>
+      Every project here has a public repository holding the numbered scripts
+      that produce its results, in order, from raw reads to final figures.
+      Analyses are written in R and rendered with Quarto, so a supplementary
+      appendix can be rebuilt from the same source that produced the numbers.
+    </p>
+    <div class="callout">
+      <p>Looking for a specific script, dataset or intermediate object?
+         <a href="index.html#contact">Get in touch</a> — I am glad to share.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© <span id="year">2026</span> Daniel Angulo Serrano</span>
+    <span><a href="index.html">Back to home</a></span>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

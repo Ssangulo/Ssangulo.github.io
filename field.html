@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Field — Daniel Angulo Serrano</title>
+<meta name="description" content="Field photographs from alpine tundra and Andean fieldwork.">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="images/site/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">Daniel Angulo Serrano
+      <span class="brand-sub">Molecular &amp; fungal ecology</span>
+    </a>
+    <nav class="site-nav">
+      <a href="index.html">About</a>
+      <a href="research.html">Research</a>
+      <a href="field.html" aria-current="page">Field</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <div class="wrap">
+      <p class="kicker">Field</p>
+      <h1>From the field</h1>
+      <p class="lede">
+        <!-- EDIT: your own intro line for the gallery -->
+        Photographs from the sampling seasons behind the data — snow-covered
+        heath in March, the same ground in flower in June, and the places
+        further afield where the work started.
+      </p>
+    </div>
+  </section>
+
+  <section class="section wrap">
+    <!-- The grid is built from assets/photos.js — edit that file to add photos. -->
+    <div class="gallery" id="gallery"></div>
+
+    <p style="color:var(--ink-faint); font-size:.9rem;">
+      Click any photograph to open it larger; use ← and → to move through the set.
+    </p>
+  </section>
+</main>
+
+<!-- lightbox -->
+<div id="lightbox" role="dialog" aria-modal="true" aria-label="Enlarged photograph">
+  <button class="lb-close" aria-label="Close">&times;</button>
+  <button class="lb-prev" aria-label="Previous photograph">&#8249;</button>
+  <button class="lb-next" aria-label="Next photograph">&#8250;</button>
+  <img src="" alt="">
+  <div class="lb-caption"></div>
+</div>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© <span id="year">2026</span> Daniel Angulo Serrano</span>
+    <span><a href="index.html">Back to home</a></span>
+  </div>
+</footer>
+
+<script src="assets/photos.js"></script>
+<script src="assets/gallery.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

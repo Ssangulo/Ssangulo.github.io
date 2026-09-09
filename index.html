@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daniel Angulo Serrano</title>
+<meta name="description" content="Daniel Angulo Serrano — molecular ecologist working on fungal communities, DNA metabarcoding and field-based ecology.">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="images/site/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">Daniel Angulo Serrano
+      <span class="brand-sub">Molecular &amp; fungal ecology</span>
+    </a>
+    <nav class="site-nav">
+      <a href="index.html" aria-current="page">About</a>
+      <a href="research.html">Research</a>
+      <a href="field.html">Field</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <!-- EDIT: your one-line self-description -->
+        <p class="kicker">Molecular ecology · Mycology · Metabarcoding</p>
+        <h1>I study the fungi that live alongside animals and plants.</h1>
+        <p class="lede">
+          My work uses DNA metabarcoding and field sampling to ask how fungal
+          communities are shaped by their hosts, their seasons and their
+          landscapes — currently in Norwegian alpine tundra, previously along
+          Andean elevational gradients.
+        </p>
+        <div class="btn-row">
+          <a class="btn solid" href="research.html">See the research</a>
+          <a class="btn" href="field.html">Field photos</a>
+        </div>
+      </div>
+      <!-- EDIT: drop a square portrait at images/site/portrait.jpg -->
+      <img class="portrait" src="images/site/portrait.svg" alt="Portrait of Daniel Angulo Serrano">
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="section wrap narrow">
+    <h2>About</h2>
+    <p>
+      <!-- EDIT: replace this paragraph with your own bio. -->
+      I am a biologist working at the interface of mycology, community ecology
+      and molecular methods. Most of my research runs on high-throughput
+      amplicon sequencing — ITS metabarcoding of fungi, plant ITS2 for diet
+      reconstruction — combined with the fieldwork needed to collect samples
+      that are actually worth sequencing.
+    </p>
+    <p>
+      I build my own bioinformatic pipelines end to end: from demultiplexing and
+      primer trimming through DADA2 denoising, OTU curation, taxonomic
+      assignment against UNITE, and on to the community models that answer the
+      ecological question — ordination and PERMANOVA, Hill-number diversity,
+      joint species distribution models and Bayesian hierarchical regression.
+    </p>
+    <p>
+      Everything I publish comes with the code that produced it.
+    </p>
+
+    <h2>What I work with</h2>
+    <div class="cards two">
+      <div class="card">
+        <h3>In the field</h3>
+        <p>Sampling design for elevational gradients and seasonal time series,
+           non-invasive faecal and root sampling, herbarium and voucher
+           handling, alpine and montane fieldwork.</p>
+        <ul class="tags">
+          <li>Sampling design</li><li>Non-invasive sampling</li><li>Alpine tundra</li><li>Andean páramo</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>At the bench &amp; the terminal</h3>
+        <p>DNA extraction from difficult substrates, amplicon library prep, and
+           reproducible analysis in R — DADA2, phyloseq, vegan, gllvm, Hmsc,
+           brms — with the whole workflow version-controlled and documented.</p>
+        <ul class="tags">
+          <li>R</li><li>DADA2</li><li>phyloseq</li><li>vegan</li><li>brms / Stan</li><li>Hmsc</li><li>Quarto</li><li>Git</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ===================== SELECTED WORK ===================== -->
+    <h2>Selected work</h2>
+    <div class="cards two">
+      <div class="card">
+        <p class="meta">Current · PhD research</p>
+        <h3>Seasonal fungal communities in ptarmigan dung</h3>
+        <p>ITS2 metabarcoding of willow ptarmigan droppings across three years
+           of winter and summer sampling in Lierne, Norway — asking whether a
+           seasonal diet shift reshapes the dung fungal community.</p>
+        <p><a href="research.html#ptarmigan">Read more →</a></p>
+      </div>
+      <div class="card">
+        <p class="meta">Completed</p>
+        <h3>Root fungi along an Andean gradient</h3>
+        <p>Root-associated fungal communities of <em>Pernettya</em> across
+           forest, subpáramo and páramo, sampled along a 2700–3800 m
+           elevational gradient.</p>
+        <p><a href="research.html#roots">Read more →</a></p>
+      </div>
+    </div>
+
+    <!-- ===================== CONTACT ===================== -->
+    <h2 id="contact">Contact</h2>
+    <p>
+      The fastest way to reach me is by email. I am happy to hear about
+      collaborations, data requests, or questions about any of the pipelines
+      linked here.
+    </p>
+    <p>
+      <!-- EDIT: contact + profile links -->
+      <strong>Email</strong> · <a href="mailto:danielanguloserrano@gmail.com">danielanguloserrano@gmail.com</a><br>
+      <strong>GitHub</strong> · <a href="https://github.com/Ssangulo">github.com/Ssangulo</a><br>
+      <strong>ORCID</strong> · <a href="#">add your ORCID iD</a><br>
+      <strong>Google Scholar</strong> · <a href="#">add your Scholar profile</a>
+    </p>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© <span id="year">2026</span> Daniel Angulo Serrano</span>
+    <span>Built as a static site, hosted on GitHub Pages.</span>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
