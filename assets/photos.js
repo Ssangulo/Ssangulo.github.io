@@ -25,19 +25,19 @@
 const GROUPS = [
   {
     name: "Ptarmigan — Lierne, Norway",
-    blurb: "Dung sampling on the tundra at Lifjellet, twice a year, in March snow and June green."
+    blurb: "Ptarmigan dung sampling on the tundra at Lifjellet, twice a year, in March snow and June green."
   },
   {
     name: "Svalbard",
-    blurb: "High-Arctic fieldwork with the Norwegian Polar Institute."
+    blurb: "High-Arctic fieldwork following the migrating Pink footed goose."
   },
   {
     name: "Páramo — Colombia",
-    blurb: "Root sampling on the Andean sky islands, across the forest–páramo transition."
+    blurb: "Root sampling on the Andean pàramos."
   },
   {
     name: "Trinidad",
-    blurb: "Field and lab assistant on <a href=\"https://theguppyproject.weebly.com/\">The Guppy Project</a> \u2014 David Reznick, Joe Travis, Ron Bassar and Tim Coulson\u2019s long-running study of how ecology and evolution feed back on each other in Trinidad\u2019s mountain streams. Hired hands in the field and the lab; the science is theirs, not mine."
+    blurb: "Field and lab assistant for 3 months on <a href=\"https://theguppyproject.weebly.com/\">The Guppy Project</a> \u2014 David Reznick, Joe Travis, Ron Bassar and Tim Coulson\u2019s long-running study of how ecology and evolution feed back on each other in Trinidad\u2019s mountain streams. Hired hands in the field and the lab."
   },
   {
     name: "Off the clock",
@@ -62,7 +62,6 @@ const PHOTOS = [
     alt: "A labelled Falcon tube lying open on moss, ready for a dung sample",
     caption: "One sample, tubed and labelled",
     where: "Lifjellet, Lierne · June 2025",
-    note: "Every tube carries the sample code that follows it all the way to the sequencer.",
     group: "Ptarmigan — Lierne, Norway",
     w: 975, h: 1300
   },
@@ -71,7 +70,7 @@ const PHOTOS = [
   {
     src: "images/field/svalbard-sampling.jpg",
     alt: "A person in a survival suit kneeling on tundra, bagging a sample with gloved hands",
-    caption: "Bagging a sample in a survival suit",
+    caption: "Bagging a sample",
     where: "Svalbard · September 2026",
     group: "Svalbard",
     w: 975, h: 1300
@@ -81,14 +80,14 @@ const PHOTOS = [
     alt: "A bleached skeleton lying on Arctic tundra, research station visible in the distance",
     caption: "Life after death",
     where: "Svalbard · September 2026",
-    note: "A carcass fertilises the ground it lies on — the vegetation around it grows richer and greener for years afterwards.",
+    note: "A carcass fertilises the ground it lies on, and the vegetation around it grows richer and greener for years afterwards.",
     group: "Svalbard",
     w: 975, h: 1300
   },
   {
     src: "images/field/svalbard-rifle-station.jpg",
-    alt: "Daniel in a high-visibility jacket carrying a rifle, with settlement buildings behind",
-    caption: "Rifle and hi-vis — standard kit up here",
+    alt: "Daniel in a high-visibility jacket carrying a rifle",
+    caption: "Rifle and flotation suit — standard kit up here",
     where: "Svalbard · September 2026",
     group: "Svalbard",
     w: 975, h: 1300
@@ -119,7 +118,7 @@ const PHOTOS = [
     alt: "Three researchers standing in a shallow forest stream with sampling buckets and nets",
     caption: "Working a stream reach",
     where: "Trinidad",
-    note: "Mark\u2013recapture on wild guppy populations: fish are caught, measured, marked and returned, stream reach by stream reach.",
+    note: "Mark\u2013recapture on wild guppy populations: fish are caught, measured, marked and returned.",
     group: "Trinidad",
     w: 1080, h: 1067
   },
