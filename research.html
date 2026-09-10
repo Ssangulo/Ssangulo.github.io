@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Research — Daniel Angulo Serrano</title>
-<meta name="description" content="Research projects, methods and publications — fungal metabarcoding in alpine tundra, Andean elevational gradients, and permafrost decomposition in Arctic Norway.">
+<meta name="description" content="Research projects, methods and publications. Fungal metabarcoding in alpine tundra, Andean elevational gradients, and permafrost decomposition in Arctic Norway.">
 <link rel="stylesheet" href="assets/style.css">
 <link rel="icon" href="images/site/favicon.svg" type="image/svg+xml">
 </head>
@@ -55,12 +55,15 @@
         taxa and the plants in the diet.
       </p>
       <p>
-        The analysis chain runs from demultiplexing and primer trimming through
-        DADA2 denoising and LULU curation to UNITE-based taxonomy, then into
-        community-level models: robust-Aitchison PERMANOVA, Hill-number
-        diversity, generalised linear latent variable models and a joint
-        species distribution model. A separate strand documents "dark" fungal
-        taxa — sequences with no confident named match — against UNITE Species
+        Every sample was amplified in uniquely indexed PCR replicates, which
+        stay separate through the whole pipeline and enter the models as their
+        own level, so technical variation is estimated rather than assumed away.
+        The chain runs from demultiplexing and primer trimming through DADA2
+        denoising and LULU curation to UNITE-based taxonomy, then into
+        community-level models. Robust-Aitchison PERMANOVA, Hill-number
+        diversity, generalised linear latent variable models and a joint species
+        distribution model. A separate strand documents the "dark" fungal taxa,
+        sequences with no confident named match, against UNITE Species
         Hypotheses.
       </p>
       <ul class="tags">
@@ -79,6 +82,7 @@
         <span class="years">2019&ndash;2024</span>
       </div>
       <p class="meta"><span class="status">Preprint · in review</span></p>
+      <p class="affil"><span class="chip"><img src="images/site/ntnu-logo.svg" alt="NTNU" width="106" height="20"></span></p>
       <p>
         Above the Andean treeline, the páramo sits as a series of isolated
         mountaintops &mdash; &ldquo;sky islands&rdquo; separated by valleys that
@@ -126,6 +130,7 @@
         <span class="years">2022&ndash;2023</span>
       </div>
       <p class="meta"><span class="status">More detail to come</span></p>
+      <p class="affil"><span class="chip"><img src="images/site/ntnu-logo.svg" alt="NTNU" width="106" height="20"></span></p>
 
       <figure class="project-figure">
         <img src="images/site/iskoras-tundra-mast.jpg"
@@ -184,7 +189,7 @@
         <span class="authors">Angulo Serrano, D., Pizano, C., Blaalid, R., Martin, M., &amp; Dunshea, G.</span>
         <span class="title">Parallel elevation filtering of Ericaceae root-associated fungal
           communities in Andean páramo ecosystems.</span>
-        <span class="venue">Preprint, May 2026 — currently in review.</span>
+        <span class="venue">Preprint, May 2026, currently in review.</span>
         <a href="https://doi.org/10.22541/authorea.15003248/v1">10.22541/authorea.15003248/v1</a>
       </li>
       <!-- Add a published paper by copying this block:
@@ -203,11 +208,12 @@
       Every project here has a public repository holding the numbered scripts
       that produce its results, in order, from raw reads to final figures.
       Analyses are written in R and rendered with Quarto, so a supplementary
-      appendix can be rebuilt from the same source that produced the numbers.
+      appendix is rebuilt from the same source that produced the numbers in it,
+      and cannot quietly drift out of step with them.
     </p>
     <div class="callout">
       <p>Looking for a specific script, dataset or intermediate object?
-         <a href="index.html#contact">Get in touch</a> — I am glad to share.</p>
+         <a href="index.html#contact">Get in touch</a>. I am glad to share.</p>
     </div>
   </section>
 </main>

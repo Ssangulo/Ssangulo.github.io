@@ -247,6 +247,18 @@ main { padding-bottom: 5rem; }
   text-transform: uppercase; color: var(--accent-2); font-weight: 600; margin-bottom: .2rem;
 }
 
+/* ---------- affiliation mark ---------- */
+/* Small institution logo shown under a project title. The logo sits on a white
+   chip so it keeps its official colours in both the light and dark themes
+   rather than being recoloured or inverted. */
+.affil { display: flex; align-items: center; gap: .6rem; margin: -.2rem 0 1.1rem; }
+.affil .chip {
+  display: inline-flex; align-items: center;
+  background: #fff; border: 1px solid var(--rule); border-radius: 6px;
+  padding: .4rem .6rem;
+}
+.affil .chip img { height: 20px; width: auto; }
+
 /* ---------- misc ---------- */
 
 .callout {
