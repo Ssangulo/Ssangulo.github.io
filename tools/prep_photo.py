@@ -7,7 +7,7 @@ Resizes to a sensible web size, fixes phone rotation, and strips ALL metadata
 
 Usage:
     python3 tools/prep_photo.py SOURCE.jpg images/field/output-name.jpg
-    python3 tools/prep_photo.py --max 2000 SOURCE.jpg images/site/portrait.jpg
+    python3 tools/prep_photo.py --square SOURCE.jpg images/site/portrait.jpg
 
 Requires Pillow:  pip install --user Pillow
 """
@@ -25,7 +25,7 @@ MAX_EDGE = 1300      # long edge in pixels; ample for the grid and the lightbox
 QUALITY = 80         # JPEG quality; 80 is visually clean, and resolution matters more than quality here
 
 
-def prep(src, dst, max_edge=MAX_EDGE, quality=QUALITY):
+def prep(src, dst, max_edge=MAX_EDGE, quality=QUALITY, square=False):
     before = os.path.getsize(src)
 
     im = Image.open(src)
@@ -35,7 +35,11 @@ def prep(src, dst, max_edge=MAX_EDGE, quality=QUALITY):
     im = im.convert("RGB")
 
     w, h = im.size
-    if max(w, h) > max_edge:
+    if square:
+        # Centre-crop to a square, for the portrait slot on the home page.
+        edge = min(max_edge, min(w, h))
+        im = ImageOps.fit(im, (edge, edge), Image.LANCZOS, centering=(0.5, 0.5))
+    elif max(w, h) > max_edge:
         scale = max_edge / max(w, h)
         im = im.resize((round(w * scale), round(h * scale)), Image.LANCZOS)
 
@@ -72,5 +76,7 @@ if __name__ == "__main__":
     ap.add_argument("dest")
     ap.add_argument("--max", type=int, default=MAX_EDGE, help=f"long edge, default {MAX_EDGE}")
     ap.add_argument("--quality", type=int, default=QUALITY, help=f"JPEG quality, default {QUALITY}")
+    ap.add_argument("--square", action="store_true",
+                    help="centre-crop to a square (for the home-page portrait)")
     a = ap.parse_args()
-    prep(a.source, a.dest, a.max, a.quality)
+    prep(a.source, a.dest, a.max, a.quality, a.square)

@@ -102,7 +102,9 @@ p { margin: 0 0 1.1em; }
   .hero-grid { grid-template-columns: 1fr 240px; gap: 3rem; }
 }
 .portrait {
-  width: 100%; aspect-ratio: 1/1; object-fit: cover;
+  /* height:auto is required: the img carries width/height attributes (good for
+     layout stability), and without it that height wins over aspect-ratio. */
+  width: 100%; height: auto; aspect-ratio: 1/1; object-fit: cover;
   border-radius: var(--radius); box-shadow: var(--shadow); background: var(--bg-soft);
 }
 .kicker {
