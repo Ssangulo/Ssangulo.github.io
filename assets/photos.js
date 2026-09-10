@@ -32,6 +32,10 @@ const GROUPS = [
     blurb: "High-Arctic fieldwork with the Norwegian Polar Institute."
   },
   {
+    name: "Páramo — Colombia",
+    blurb: "Root sampling on the Andean sky islands, across the forest–páramo transition."
+  },
+  {
     name: "Off the clock",
     separate: true,
     blurb: "What I do when I'm not working."
@@ -83,6 +87,25 @@ const PHOTOS = [
     caption: "Rifle and hi-vis — standard kit up here",
     where: "Svalbard · September 2026",
     group: "Svalbard",
+    w: 975, h: 1300
+  },
+
+  /* ---------- Páramo — Colombia ---------- */
+  {
+    src: "images/field/paramo-belmira-root-sampling.jpg",
+    alt: "Two researchers bagging root samples among frailejones in páramo fog",
+    caption: "Sampling <em>Gaultheria myrsinoides</em> roots at 3,100 m",
+    where: "Páramo de Belmira, Colombia",
+    group: "Páramo — Colombia",
+    w: 1300, h: 975
+  },
+  {
+    src: "images/field/paramo-frailejones-fog.jpg",
+    alt: "Frailejones in flower emerging from thick fog on the páramo",
+    caption: "Frailejones in the fog",
+    where: "Páramo, Colombian Andes",
+    note: "Frailejones (Espeletia) are the signature plants of the páramo — the world's coldest biodiversity hotspot.",
+    group: "Páramo — Colombia",
     w: 975, h: 1300
   },
 
