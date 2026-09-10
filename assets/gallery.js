@@ -36,7 +36,7 @@
     if (b.def.blurb) {
       var blurb = document.createElement('p');
       blurb.className = 'group-blurb';
-      blurb.textContent = b.def.blurb;
+      blurb.innerHTML = b.def.blurb;   // blurbs may contain links/emphasis
       sec.appendChild(blurb);
     }
 

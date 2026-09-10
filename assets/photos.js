@@ -36,6 +36,10 @@ const GROUPS = [
     blurb: "Root sampling on the Andean sky islands, across the forest–páramo transition."
   },
   {
+    name: "Trinidad",
+    blurb: "Field and lab assistant on <a href=\"https://theguppyproject.weebly.com/\">The Guppy Project</a> \u2014 David Reznick, Joe Travis, Ron Bassar and Tim Coulson\u2019s long-running study of how ecology and evolution feed back on each other in Trinidad\u2019s mountain streams. Hired hands in the field and the lab; the science is theirs, not mine."
+  },
+  {
     name: "Off the clock",
     separate: true,
     blurb: "What I do when I'm not working."
@@ -107,6 +111,17 @@ const PHOTOS = [
     note: "Frailejones (Espeletia) are the signature plants of the páramo — the world's coldest biodiversity hotspot.",
     group: "Páramo — Colombia",
     w: 975, h: 1300
+  },
+
+  /* ---------- Trinidad ---------- */
+  {
+    src: "images/field/trinidad-stream-sampling.jpg",
+    alt: "Three researchers standing in a shallow forest stream with sampling buckets and nets",
+    caption: "Working a stream reach",
+    where: "Trinidad",
+    note: "Mark\u2013recapture on wild guppy populations: fish are caught, measured, marked and returned, stream reach by stream reach.",
+    group: "Trinidad",
+    w: 1080, h: 1067
   },
 
   /* ---------- Off the clock ---------- */
