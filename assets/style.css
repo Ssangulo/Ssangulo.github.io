@@ -258,6 +258,9 @@ main { padding-bottom: 5rem; }
   padding: .4rem .6rem;
 }
 .affil .chip img { height: 20px; width: auto; }
+/* two-line lockups (wordmark stacked over a subtitle) need more height
+   than a single-line mark before the smaller line becomes legible */
+.affil .chip img.stacked { height: 30px; }
 
 /* ---------- misc ---------- */
 
