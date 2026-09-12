@@ -109,9 +109,10 @@ const PHOTOS = [
   },
   {
     src: "images/field/finnmark-wading.jpg",
-    alt: "Wading through a shallow tundra pond in waders, beside a mesh trap set in the water",
-    caption: "Wading out to a thaw pond",
+    alt: "Wading through a flooded tundra plot in waders, beside an open-top warming chamber",
+    caption: "An open-top chamber in a thaw pond",
     where: "Iskoras, Finnmark, Norway",
+    note: "Open-top chambers warm the ground inside them passively, a degree or two above ambient, so decomposition can be measured under the conditions a warmer Arctic would bring.",
     group: "Finnmark — Permafrost",
     w: 975, h: 1300
   },
