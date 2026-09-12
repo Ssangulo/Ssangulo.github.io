@@ -107,6 +107,14 @@ const PHOTOS = [
     group: "Finnmark — Permafrost",
     w: 975, h: 1300
   },
+  {
+    src: "images/field/finnmark-wading.jpg",
+    alt: "Wading through a shallow tundra pond in waders, beside a mesh trap set in the water",
+    caption: "Wading out to a thaw pond",
+    where: "Iskoras, Finnmark, Norway",
+    group: "Finnmark — Permafrost",
+    w: 975, h: 1300
+  },
 
   /* ---------- Páramo — Colombia ---------- */
   {
