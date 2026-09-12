@@ -237,15 +237,20 @@ main { padding-bottom: 5rem; }
   }
 }
 
+/* Press coverage is a headline credential, so it is set larger than body copy
+   rather than smaller, and sits on a tinted panel instead of a hairline rule. */
 .press {
-  font-size: .93rem; color: var(--ink-soft);
-  border-left: 3px solid var(--accent-2); padding: .1rem 0 .1rem .9rem;
-  margin: 1.3rem 0; max-width: var(--measure);
+  font-size: 1.1rem; line-height: 1.5; color: var(--ink);
+  border-left: 4px solid var(--accent-2);
+  background: var(--bg-soft);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  padding: 1rem 1.2rem; margin: 1.6rem 0; max-width: var(--measure);
 }
 .press .press-label {
-  display: block; font-size: .72rem; letter-spacing: .12em;
-  text-transform: uppercase; color: var(--accent-2); font-weight: 600; margin-bottom: .2rem;
+  display: block; font-size: .78rem; letter-spacing: .14em;
+  text-transform: uppercase; color: var(--accent-2); font-weight: 700; margin-bottom: .45rem;
 }
+.press a { font-weight: 600; }
 
 /* ---------- affiliation mark ---------- */
 /* Small institution logo shown under a project title. The logo sits on a white

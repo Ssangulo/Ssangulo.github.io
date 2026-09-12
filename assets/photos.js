@@ -32,6 +32,10 @@ const GROUPS = [
     blurb: "High-Arctic fieldwork following the migrating Pink footed goose."
   },
   {
+    name: "Finnmark — Permafrost",
+    blurb: "BSc fieldwork at Iskoras, measuring how fast carbon breaks down once permafrost thaws."
+  },
+  {
     name: "Páramo — Colombia",
     blurb: "Root sampling on the Andean pàramos."
   },
@@ -93,6 +97,17 @@ const PHOTOS = [
     w: 975, h: 1300
   },
 
+  /* ---------- Finnmark — Permafrost ---------- */
+  {
+    src: "images/field/iskoras-tundra-mast.jpg",
+    alt: "Daniel standing on tundra beside a solar-powered monitoring mast at the Iskoras field site",
+    caption: "The monitoring site at Iskoras",
+    where: "Iskoras, Finnmark, Norway",
+    note: "Over a hundred tea bags went into the ground across the thaw gradient here, as a standardised measure of decomposition.",
+    group: "Finnmark — Permafrost",
+    w: 975, h: 1300
+  },
+
   /* ---------- Páramo — Colombia ---------- */
   {
     src: "images/field/paramo-belmira-root-sampling.jpg",
@@ -111,6 +126,22 @@ const PHOTOS = [
     group: "Páramo — Colombia",
     w: 975, h: 1300
   },
+  {
+    src: "images/field/colombia-carrying-gear.jpg",
+    alt: "A person carrying a cool box and sample bags up a steep muddy forest trail",
+    caption: "Carrying the cool box up to the site",
+    where: "La Nevera, Colombia",
+    group: "Páramo — Colombia",
+    w: 975, h: 1300
+  },
+  {
+    src: "images/field/paramo-tarn.jpg",
+    alt: "A small lake below a cloud-covered ridge, frailejones in the foreground",
+    caption: "A tarn below the ridge",
+    where: "Páramo, Colombian Andes",
+    group: "Páramo — Colombia",
+    w: 975, h: 1300
+  },
 
   /* ---------- Trinidad ---------- */
   {
@@ -121,6 +152,22 @@ const PHOTOS = [
     note: "Mark\u2013recapture on wild guppy populations: fish are caught, measured, marked and returned.",
     group: "Trinidad",
     w: 1080, h: 1067
+  },
+  {
+    src: "images/field/trinidad-truck.jpg",
+    alt: "A pickup truck parked at the end of an overgrown forest track",
+    caption: "The end of the drivable track",
+    where: "Trinidad",
+    group: "Trinidad",
+    w: 975, h: 1300
+  },
+  {
+    src: "images/field/trinidad-forest.jpg",
+    alt: "Tall trees and dense understorey inside Trinidadian rainforest",
+    caption: "Inside the forest",
+    where: "Trinidad",
+    group: "Trinidad",
+    w: 975, h: 1300
   },
 
   /* ---------- Off the clock ---------- */
