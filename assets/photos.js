@@ -41,7 +41,7 @@ const GROUPS = [
   },
   {
     name: "Trinidad",
-    blurb: "Field and lab assistant for 3 months on <a href=\"https://theguppyproject.weebly.com/\">The Guppy Project</a> \u2014 David Reznick, Joe Travis, Ron Bassar and Tim Coulson\u2019s long-running study of how ecology and evolution feed back on each other in Trinidad\u2019s mountain streams. Hired hands in the field and the lab."
+    blurb: "Field and lab assistant for 3 months on <a href=\"https://theguppyproject.weebly.com/\">The Guppy Project</a> \u2014 David Reznick, Joe Travis, Ron Bassar and Tim Coulson\u2019s long-running study of how ecology and evolution feed back on each other in Trinidad\u2019s mountain streams."
   },
   {
     name: "Off the clock",
@@ -90,7 +90,7 @@ const PHOTOS = [
   },
   {
     src: "images/field/svalbard-rifle-station.jpg",
-    alt: "Daniel in a high-visibility jacket carrying a rifle",
+    alt: "Daniel in a black and hi-vis yellow flotation suit, handling a rifle beside a dry bag",
     caption: "Rifle and flotation suit — standard kit up here",
     where: "Svalbard · September 2026",
     group: "Svalbard",
