@@ -1,0 +1,7 @@
+# https://ssangulo.github.io/robots.txt
+# Everything here is public. Crawl it all.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://ssangulo.github.io/sitemap.xml

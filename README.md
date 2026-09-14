@@ -14,6 +14,9 @@ assets/photos.js      THE PHOTO LIST + the group list — the only file to edit
                       to add a photo or start a new collection
 assets/gallery.js     Grid + lightbox machinery (no need to touch)
 tools/prep_photo.py   Resizes a photo for the web and strips its GPS/EXIF
+robots.txt            Tells crawlers everything is open, points at the sitemap
+sitemap.xml           The page list submitted to Google/Bing — add a <url>
+                      block here when a new page goes live
 images/field/         Field photographs
 images/site/          Portrait, favicon, research-page images
 .nojekyll             Tells GitHub Pages to serve the files as-is
